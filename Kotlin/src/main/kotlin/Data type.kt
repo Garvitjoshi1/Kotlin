@@ -21,8 +21,8 @@ fun main(){
     println("The Updated value is: $bool")
 
     println("<===============================================================>")
-    var age = 19
-    var number = 1
+    val age = 19
+    val number = 1
     println("My favourite number is $number and my age is $age")
 
 }
