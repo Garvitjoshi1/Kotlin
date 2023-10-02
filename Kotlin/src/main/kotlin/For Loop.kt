@@ -41,6 +41,7 @@ fun main(){
 
     println("<==========================HOMEWORK==========================>")
 
+    /* Question: To print a sum of array */
     val array1 = arrayOf(2, 3, 6, 1, 8)
     var add = 0
     for (i in array1){
@@ -48,4 +49,18 @@ fun main(){
     }
     println("The sum of array is: $add")
 
+    /* Question: User Enters 5 Numbers and calculates average to it */
+    val n = readLine()?.toInt()
+    println("Enter $n Numbers: ")
+    var avg = 0.0
+    if(n != null){
+        for (i in 1..n){
+            val input = readLine()?.toInt()
+            if(input!= null){
+                avg += input
+            }
+        }
+        avg /= n
+    }
+    println("The average value is: $avg")
 }
