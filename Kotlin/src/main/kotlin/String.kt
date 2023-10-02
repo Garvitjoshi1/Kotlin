@@ -16,6 +16,6 @@ fun main() {
     var name = readLine()
     println("Name in Correct form : $name")
     if (name != null) {
-        println("Name in reversed form : ${name.reversed()}")
+        println("Name in reversed form : ${name.uppercase().reversed()}")
     }
 }
