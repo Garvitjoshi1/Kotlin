@@ -51,14 +51,11 @@ fun main(){
     /* Question: Take number as input and print Fibonacci number till that*/
     print("Enter a number greater than 1: ")
     val z = readLine()?.toInt()
-    var y = 0
-    val list4 = mutableListOf<Int>()
+    val list4 = mutableListOf<Int>(0, 1)
     if(z != null){
-        for(i in 1..z){
-            y += i
-            list4.add(i)
+        for(i in 2..<z){
+            list4.add(list4[i-2] + list4[i-1])
         }
     }
-    println(y)
     println(list4)
 }
